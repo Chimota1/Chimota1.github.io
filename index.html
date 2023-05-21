@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Athiti&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Athiti&family=Inter&display=swap" rel="stylesheet">
+
     <title>Document</title>
     <style>
 
@@ -33,6 +37,12 @@
             padding: 40px 32px;
         }
 
+        main {
+            display: flex;
+            margin-top: 95px;
+            font-family: "Inter";
+        }
+
         .logo-and-brandname {
             display: flex;
             align-items: center;
@@ -55,6 +65,53 @@
             line-height: 45px;
         }
 
+        span {
+            color:#07B464;
+        }
+
+        .main-text {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-image{
+            width:50%;
+
+        }
+
+        .main-image-img{
+            width: 677px;
+            height: 615px;
+            margin-top: -100px;
+
+        }
+
+        .p-1 {
+            position: absolute;
+            width: 424px;
+            height: 50px; 
+            left: 32px;
+            top: 381px;
+        }
+
+        .know-more-button {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 50px;
+            width: 237px;
+            height: 48px;
+            left: calc(50% - 237px/2 - 490.5px);
+            top: calc(50% - 48px/2 + 128px);
+            background: linear-gradient(180deg, #34E06F 0%, #07B464 100%);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 2px 4px rgba(255, 255, 255, 0.25), inset 0px -2px 4px rgba(0, 0, 0, 0.25);
+            color: white;
+            border-radius: 12px;
+            margin-left: 30px;
+            margin-top: 75px;
+            text-align: center;
+        }
+
         ul {
             display: flex;
             gap: 42px;
@@ -68,7 +125,17 @@
             line-height: 24px;
 
         }
-
+ 
+        h1 {
+            width: 523px;
+            height: 128px;
+            margin-left: 30px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 64px;
+        }
+         
         a {
             text-decoration: none;
             color: inherit;
@@ -80,7 +147,7 @@
     <header>
         <div class="logo-and-brandname">
         <a class="logo" href="#">
-            <img src="" alt="Logo">
+            <img src="../image/Logo.png" alt="Logo">
         </a>
         <a class="brandname" href="#">Bellefit</a>
         </div>
@@ -92,6 +159,19 @@
             <li><a href="#">Sing up</a></li>
         </ul>
     </header>
+    <main>
+        <div class="main-text">
+            <h1>Own your calm space in your <span>head</span> and <span>body</span></h1>
+            <p class="p-1">Get a fit and healthy body at the comfort of your home</p>
+            <a class="know-more-button" href="#">KNOW MORE</a>
+        </div>     
+        <div class="main-image">
+            <img class="main-image-img" src="../image/Main image.png" alt="main-image">
+        </div>
+   </main>
+   <footer>
+    <p></p>
+   </footer>
 </div>
 </body>
 </html>

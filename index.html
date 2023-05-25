@@ -26,7 +26,7 @@
         }
 
         .wrapper {
-            max-width: 1280;
+            max-width: 1280px;
             margin: 0 auto;
         }
 
@@ -41,6 +41,12 @@
             display: flex;
             margin-top: 95px;
             font-family: "Inter";
+            align-items: center;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column  ;
         }
 
         .logo-and-brandname {
@@ -88,11 +94,14 @@
         }
 
         .p-1 {
-            position: absolute;
             width: 424px;
-            height: 50px; 
+            height: 50px;
             left: 32px;
             top: 381px;
+            position: absolute;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
         }
 
         .know-more-button {
@@ -119,10 +128,28 @@
             top: 80px;
         }
 
-        ul {
+        .menu-list{
             display: flex;
             gap: 42px;
             align-items: center;
+        }
+
+        .hamburger {
+            width: 24px;
+            height: 24px;
+            background-image: url(./image/Hamburger.png);
+            display: none;
+        }
+
+        .card {
+        position: relative;
+        left: 420px;    
+        }
+
+        .card-img {
+        width: 450px;
+        height: 300px;
+
         }
 
         li {
@@ -134,10 +161,11 @@
         }
  
         h1 {
+            position: absolute;
             width: 523px;
             height: 128px;
-            margin-left: 30px;
-            font-style: normal;
+            left: 32px;
+            top: 231px;
             font-weight: 700;
             font-size: 48px;
             line-height: 64px;
@@ -147,6 +175,78 @@
             text-decoration: none;
             color: inherit;
         }
+
+        @media screen and (max-width: 1024px) {
+           .menu-list{ 
+            display: none;
+        }
+
+            .hamburger {
+            display: block;
+       }
+
+       main {
+            flex-direction:column;
+            padding: 0;
+       }
+
+       footer {
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+       }
+
+       .main-text{
+        width: 100%;
+        padding-inline:11%;
+        font-family: 'Inter';
+
+       }
+       
+       h1 {
+        width: auto;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+       }
+
+       .p-1{
+        font-size: 12px;
+        padding-inline:14px;
+        text-align: center;
+       }
+
+       .know-more-button {
+        align-items: center;
+        display: block;
+        margin: 0 auto;
+        width: 226px;
+       }
+
+        .main-image {
+        width: 100%;
+        margin-top: 0;
+        padding-inline:10%;
+        margin-top: 20px;
+        }
+         
+
+        .main-image-img{
+        width: 273px;
+        height: 248px;}
+        }
+
+        .card {
+        position: absolute;
+        left: 72px;
+        top: 200px;
+        }
+
+        .card-img {
+        width: 246px;
+        height: 245px;
+        }
+
     </style>
 </head>
 <body>
@@ -158,13 +258,16 @@
         </a>
         <a class="brandname" href="#">Bellefit</a>
         </div>
-        <ul>
+        <ul class="menu-list">
             <li><a href="#">Live</a></li>
             <li><a href="#">Plans</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Log in</a></li>
             <li><a href="#">Sign up</a></li>
         </ul>
+        <div class="hamburger">
+            
+        </div>
     </header>
     <main>
         <div class="main-text">
@@ -177,6 +280,9 @@
         </div>
    </main>
    <footer>
+    <div class="card">
+    <img class="card-img" src="./image/Card.png" alt="Card">
+    </div>
     <p class="created">created by Anatoliy</p>
    </footer>
 </div>
